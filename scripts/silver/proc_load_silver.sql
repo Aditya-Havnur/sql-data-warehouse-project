@@ -276,7 +276,7 @@ SO ALways Empty First, and then ADD Data
 	FROM bronze.crm_cust_info                                                        -- same customer IDs & the most recent date
 	) as t                                                                          -- is ranked 1, anything above 1 is deleted
 	WHERE flag_last =1;
-
+*/
 /*
 Explanation - The above code uses row number funcion to first put a row number, then it groups the data 
 by using cst_id as in some cases customer id are duplicated , and as noticed the most recent dates
